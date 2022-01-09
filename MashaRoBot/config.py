@@ -19,7 +19,7 @@ class Config(object):
     SUPPORT_CHAT = 'thanimaisupport'  #Your own group for support, do not add the @
     JOIN_LOGGER = -1001739802989  #Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = -1001739802989  #Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
-    SQLALCHEMY_DATABASE_URI = 'postgres://kkzncyijeufsar:f5d15b472e033a224781aa8638ea1b5052543234f0b63bbed4b9941278769a01@ec2-3-222-34-244.compute-1.amazonaws.com:5432/ddob55b7lf7vif'
+    SQLALCHEMY_DATABASE_URI = 'postgres://beaaibybwhknay:e1c36da5dfbc689e3b5760d2cca5abe28659d994d04cb90bda80cacc63748679@ec2-52-206-57-118.compute-1.amazonaws.com:5432/da5f2618ddj8u'
     LOAD = []
     NO_LOAD = ['rss', 'cleaner', 'connection', 'math']
     WEBHOOK = None
