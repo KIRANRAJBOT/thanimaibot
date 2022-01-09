@@ -7,27 +7,25 @@ def get_user_list(config, key):
               'r') as json_file:
         return json.load(json_file)[key]
 
+
 class Config(object):
     LOGGER = True
-  
-    TEMP_DOWNLOAD_DIRECTORY = 'None'
-    API_ID = FILL API ID
-    API_HASH = "FIL API HASH"
-    TOKEN = "BOT_TOKEN"
-    OWNER_ID = 1732814103  
-    OWNER_USERNAME = "theTelegrampro"
-    SUPPORT_CHAT = 'Thanimaisupport'
-    JOIN_LOGGER = -1001739802989
-    EVENT_LOGS = -1001739802989
 
-    ALLOW_CHATS = "True"
-    SQLALCHEMY_DATABASE_URI = 'ELEPHAT OR HEROKU DB URL'  
+    API_ID = 8962397  # integer value, dont use ""
+    API_HASH = "0336e890a385149db77821a136a7fce3"
+    TOKEN = "5092817961:AAG1yNtue_fZk1EkRZBXaMsntv35AWxTrNE"
+    OWNER_ID = 1928904042  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "TheTelegrampro"
+    SUPPORT_CHAT = 'thanimaisupport'  #Your own group for support, do not add the @
+    JOIN_LOGGER = -1001739802989  #Prints any new group the bot is added to, prints just the name and ID.
+    EVENT_LOGS = -1001739802989  #Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
+    SQLALCHEMY_DATABASE_URI = 'postgres://yngnattyfkenzt:f331efbc29e95868c445f7e2b9759809ba0c58b85c9c8ed5e08b4923cb7c277f@ec2-174-129-16-183.compute-1.amazonaws.com:5432/d7db1glnrmilkg'
     LOAD = []
     NO_LOAD = ['rss', 'cleaner', 'connection', 'math']
     WEBHOOK = None
     INFOPIC = True
     URL = None
-    SPAMWATCH_API = ""  
+    SPAMWATCH_API = ""  # go to support.spamwat.ch to get key
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
     BOT_ID = "2052309535"
     
@@ -53,8 +51,7 @@ class Config(object):
     AI_API_KEY = 'awoo'  #For chatbot, get one from https://coffeehouse.intellivoid.net/dashboard
     BL_CHATS = []  # List of groups that you want blacklisted.
     SPAMMERS = None
-
-
+   
 class Production(Config):
     LOGGER = True
 
